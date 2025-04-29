@@ -1,0 +1,16 @@
+{
+  "extends": ["next/core-web-vitals", "eslint:recommended"],
+  "rules": {
+    "react/react-in-jsx-scope": "off"
+  },
+  "overrides": [
+    {
+      "files": ["components/ui/**/*.{ts,tsx}"],
+      "rules": {
+        "no-unused-vars": "off",
+        "no-undef": "off",
+        "no-redeclare": "off"
+      }
+    }
+  ]
+}
